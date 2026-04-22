@@ -1,16 +1,32 @@
-// Seleciona o botão de troca de tema e o corpo da página
-const themeToggle = document.getElementById('theme-toggle');
+/**
+ * SCRIPT DE INTERATIVIDADE DO BLOG - JEFFERSON RIBEIRO
+ * Este script controla a alternância entre os estados 'Sério' e 'Amigável'.
+ */
+
+// Seleção dos elementos principais
+const toggleBtn = document.getElementById('toggle-all');
+const modeText = document.getElementById('mode-text');
 const body = document.body;
 
-// Função para alternar entre Dark Mode e Light Mode
-themeToggle.addEventListener('click', () => {
-    // Alterna a classe 'dark-mode' no elemento body
-    body.classList.toggle('dark-mode');
+/**
+ * Função para alternar o estado do site.
+ * O CSS faz 90% do trabalho através das variáveis, o JS apenas troca a classe.
+ */
+toggleBtn.addEventListener('click', () => {
+    // Alterna a classe no body
+    const isFriendly = body.classList.toggle('friendly-mode');
 
-    // Altera o ícone do botão baseando-se no modo atual
-    if (body.classList.contains('dark-mode')) {
-        themeToggle.textContent = '☀️'; // Ícone de sol para voltar ao light mode
-    } else {
-        themeToggle.textContent = '🌙'; // Ícone de lua para voltar ao dark mode
+    // Se estiver no modo amigável (Light Mode / Arredondado)
+    if (isFriendly) {
+        modeText.textContent = "Amigável [Light]";
+        console.log("Interface alterada para: MODO AMIGÁVEL (Light/Rounded)");
+    } 
+    // Se estiver no modo padrão (Matrix / Quadrado)
+    else {
+        modeText.textContent = "Sério [Matrix]";
+        console.log("Interface alterada para: MODO SÉRIO (Matrix/Square)");
     }
 });
+
+// Mensagem de log para confirmar que o Analista de Sistemas Jefferson está online
+console.log("Sistema de Portfólio v2.0 carregado com sucesso.");
