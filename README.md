@@ -10,7 +10,7 @@ Este projeto é uma evolução extrema de um blog pessoal, focado em demonstrar 
 ## 🎨 Dualidade de Design
 O projeto possui dois estados de interface controlados por um único botão:
 1.  **Modo Sério (Matrix)**: Fundo escuro, estética Hacker/Terminal, bordas quadradas e fonte mono-espaçada. Representa o lado Analista de Sistemas.
-2.  **Modo Amigável (Light)**: Fundo claro, cores suaves, bordas arredondadas e fonte sem serifa. Representa o lado humano e os hobbies.
+2.  **Modo Amigável (Light)**: Fundo claro, cores suaves, bordas arredondadas e fonte fonte mono-espaçada. Representa o lado humano e os hobbies.
 
 ## 🤖 Uso de IA
 Este projeto foi refinado utilizando:
