@@ -3,72 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog Pessoal</title>
+    <title>Jefferson Ribeiro | Portfólio de Sistemas</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<body>
-
-    <header>
-        <nav>
-            <div class="logo">Meu Mundo</div>
+<body class="matrix-mode"> <header>
+        <nav class="nav-container">
+            <div class="logo">sys.admin_jefferson</div>
             <ul>
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#musica">Música</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#lazer">Lazer</a></li>
+                <li><a href="#sobre">/sobre</a></li>
+                <li><a href="#hobbies">/hobbies</a></li>
+                <li><a href="#contato">/contato</a></li>
             </ul>
-            <button id="theme-toggle">🌙</button>
+            <button id="toggle-all" class="btn-control">
+                Alternar Interface: <span id="mode-text">Sério [Matrix]</span>
+            </button>
         </nav>
     </header>
 
     <main>
-        <section id="sobre" class="hero">
-            <div class="profile-container">
-                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200" alt="Minha Foto" class="profile-img">
-                <h1>Olá, eu sou Jefferson Ribeiro!</h1>
-                <p>Bem-vindo ao meu cantinho na internet. Aqui compartilho um pouco sobre quem eu sou e o que eu amo fazer.</p>
-            </div>
-        </section>
-
-        <section id="musica" class="content-section">
-            <h2>🎵 O que eu ando ouvindo</h2>
-            <p>A música é o que me move. Meus gêneros favoritos variam entre o Rock Alternativo, Lo-fi para estudar e uma boa MPB.</p>
-            <div class="playlist-preview">
-                <ul>
-                    <li>🎸 Arctic Monkeys</li>
-                    <li>🎹 Caetano Veloso</li>
-                    <li>🎧 Lofi Girl Beats</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="hobbies" class="content-section grey-bg">
-            <h2>🎨 Hobbies</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Fotografia</h3>
-                    <p>Adoro capturar momentos simples do cotidiano e paisagens urbanas.</p>
-                </div>
-                <div class="card">
-                    <h3>Programação</h3>
-                    <p>Criar projetos como este blog é um dos meus passatempos favoritos.</p>
-                </div>
-                <div class="card">
-                    <h3>Leitura</h3>
-                    <p>Atualmente lendo ficção científica e livros sobre tecnologia.</p>
+        <section id="sobre" class="hero dynamic-box">
+            <div class="profile-wrapper">
+                <img src="https://github.com/je-ribeiro/Aula-Web/blob/main/avatar.jpg?raw=true" alt="Foto de Jefferson Ribeiro" class="profile-img dynamic-box">
+                <h1>Jefferson Ribeiro</h1>
+                <p class="role">> Analista de Sistemas Sênior_</p>
+                <div class="bio-text">
+                    <p><strong>O Código e o Café:</strong> Profissional metódico, encontro extrema satisfação na lógica perfeita de um sistema bem desenhado. Longe das demandas corporativas, minha personalidade se revela em rituais que exigem precisão e esforço físico.</p>
                 </div>
             </div>
         </section>
 
-        <section id="lazer" class="content-section">
-            <h2>✈️ Lazer e Viagens</h2>
-            <p>Nada supera uma viagem para a praia ou um final de semana acampando nas montanhas. O contato com a natureza é essencial para recarregar as energias.</p>
+        <section id="hobbies" class="section-container">
+            <h2 class="section-title">Executando: hobbies.exe</h2>
+            <div class="grid-cards">
+                <article class="card dynamic-box">
+                    <h3>Teclados Custom</h3>
+                    <p>Construção de teclados do zero, soldagem e lubrificação de switches para o som "thock" perfeito.</p>
+                </article>
+                <article class="card dynamic-box">
+                    <h3>Café Especial</h3>
+                    <p>Extração precisa em Hario V60: 18g de grãos moídos na hora e água a exatos 92°C.</p>
+                </article>
+                <article class="card dynamic-box">
+                    <h3>Ciclismo de Estrada</h3>
+                    <p>Ritual de "limpeza de cache" mental: 100km de rodovia monitorando cadência e potência.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contato" class="section-container">
+            <h2 class="section-title">> Estabelecer_Conexão</h2>
+            <form class="contact-form dynamic-box">
+                <div class="field">
+                    <label>Nome_</label>
+                    <input type="text" placeholder="Digite seu nome..." required class="dynamic-box">
+                </div>
+                <div class="field">
+                    <label>Email_</label>
+                    <input type="email" placeholder="seu@email.com" required class="dynamic-box">
+                </div>
+                <div class="field">
+                    <label>Mensagem_</label>
+                    <textarea rows="4" placeholder="Escreva sua mensagem..." class="dynamic-box"></textarea>
+                </div>
+                <button type="submit" class="btn-submit dynamic-box">Enviar Dados</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Criado por Jefferson Ribeiro e Gemini (Google) | Feito com ❤️ para o GitHub</p>
+        <p>Jefferson Ribeiro &copy; 2026 | Sistema Operando Normalmente.</p>
     </footer>
 
     <script src="script.js"></script>
